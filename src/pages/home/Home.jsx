@@ -7,7 +7,7 @@ import { IT_IS_OFF } from "../../constants/general.js";
 import ProductSearch from "../../components/productSearch/ProductSearch";
 import ProductCard from "../../components/productCard/ProductCard";
 import ProductCreateCard from "../../components/productCreateCard/ProductCreateCard.jsx";
-import Slider from "../../components/slider/slider.jsx";
+import Slider from "../../components/slider/Slider.jsx";
 
 const Home = () => {
     const [ products, setProducts ] = useState([]);
