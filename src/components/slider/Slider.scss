@@ -1,0 +1,88 @@
+$_width: 100%;
+$_padding: 1vw;
+
+.slider {
+    position: relative;
+    height: auto;
+    width: calc(($_width - $_padding) * 3);
+    display: flex;
+    gap: 5rem;
+
+    animation-name: move-slide;
+    animation-duration: 18s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+
+    &__1,
+    &__2,
+    &__3 {
+        width: $_width;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        position: start;
+        color: green;
+        font-size: 3rem;
+    }
+
+    &__description {
+        text-align: center;
+        color: white;
+        border: 2px solid white;
+        border-radius: 2em;
+        background-color: blue;
+        padding: 0.5em;
+    }
+
+    &__image {
+        width: 170px;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+        padding: 1vw;
+    }
+
+    @keyframes move-slide {
+
+
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        50% {
+            left: -100%;
+        }
+
+        55% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -100%;
+        }
+
+        95% {
+            left: -100%;
+        }
+
+        100% {
+            left: 0;
+        }
+    }
+}

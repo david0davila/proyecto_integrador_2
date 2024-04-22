@@ -1,0 +1,43 @@
+@use "../../../styles/scss/variables" as var;
+
+.header {
+    grid-area: header;
+
+    background-image:
+        linear-gradient(75deg, rgba(0, 0, 0, 0.75), transparent, rgba(0, 0, 0, 0.75)),
+        url("/images/layout/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__group {
+        width: 100%;
+        padding: 0.2vw;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2vw;
+
+
+        &__title {
+            color: var.$colorFontLight;
+            font-size: 4rem;
+            margin-left: 0.2rem;
+            font-family: "futbol";
+
+            &--color {
+                color: var.$colorBackgroundDark;
+                -webkit-text-stroke: 0.0125rem var.$colorFontLight;
+            }
+        }
+    }
+
+    @media (max-width: 650px) {
+
+        &__group {
+        justify-content: center;
+        }
+    }
+
+}
